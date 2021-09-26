@@ -22,7 +22,7 @@ export async function getStaticPaths() {
 	data?.genres?.map((genre) => {
 		routes.push({ params: { id: genre.name.toLowerCase() } });
 	});
-	console.log(routes);
+
 	return {
 		paths: routes,
 		fallback: true, // See the "fallback" section below
