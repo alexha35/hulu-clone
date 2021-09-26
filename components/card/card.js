@@ -6,6 +6,7 @@ const Container = styled.div`
 	flex-direction: column;
 	transition: 0.2s ease-in all;
 	cursor: pointer;
+	width: 250px;
 
 	&:hover {
 		transform: scale(1.1);

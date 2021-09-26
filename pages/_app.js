@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
 	const GlobalStyle = createGlobalStyle`
@@ -21,6 +22,11 @@ function MyApp({ Component, pageProps }) {
 
 	return (
 		<>
+			<Head>
+				<link rel='preconnect' href='https://fonts.googleapis.com' />
+				<link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
+				<link href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap' rel='stylesheet' />
+			</Head>
 			<GlobalStyle />
 			<Component {...pageProps} />
 		</>
